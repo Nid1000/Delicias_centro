@@ -1,0 +1,250 @@
+/* ======== BASE GENERAL ======== */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffd580; /* Naranja claro */
+  color: #663300; /* Marrón texto */
+  text-align: center;
+}
+
+/* ======== HEADER ======== */
+header {
+  background-color: #cc9900; /* Naranja oscuro */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+  width: 120px;
+  height: auto;
+}
+
+header .cart-icon {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header .cart-icon i {
+  margin-right: 8px;
+}
+
+header .cart-icon .badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 14px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+/* ======== CUADROS ======== */
+.cuadro {
+  border: 2px solid #e6b800;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff3cc; /* fondo beige */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+}
+
+/* ======== FORMULARIOS ======== */
+form {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-size: 16px;
+  color: #663300;
+}
+
+form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #fff3cc; /* Fondo suave */
+  margin-bottom: 20px;
+}
+
+form button {
+  background-color: #ffcc66;
+  color: #663300;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #e6b800; /* Hover */
+  color: #fff;
+}
+
+a.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ffcc66;
+  color: #663300;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+a.button:hover {
+  background-color: #e6b800;
+  color: #fff;
+}
+
+/* ======== MI CARRITO ======== */
+.mi-carrito {
+  background-color: #FFF;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.mi-carrito h2 {
+  font-size: 22px;
+  color: #cc9900; 
+  margin-bottom: 20px;
+}
+
+.carrito-item {
+  border-bottom: 1px solid #EEE;
+  padding: 10px 0;
+}
+
+.carrito-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #663300;
+}
+
+button {
+  background-color: #ffcc66;
+  color: #663300;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e6b800;
+  color: #fff;
+}
+
+/* ======== MAIN SECTIONS ======== */
+main {
+  background-color: #fff6d5;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ======== CATÁLOGO ======== */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.producto {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.producto h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #663300;
+}
+
+.producto p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #996600;
+}
+
+.producto button {
+  background-color: #ffcc66;
+  color: #663300;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.producto button:hover {
+  background-color: #e6b800;
+  color: #fff;
+}
+
+/* ======== TABLAS CARRITO ======== */
+.carrito-section th {
+  background-color: #cc9900;
+  color: white;
+}
+
+.carrito-section td {
+  background-color: #fff3cc;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #663300;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 16px;
+  color: #fff;
+}
